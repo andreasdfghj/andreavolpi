@@ -1,0 +1,211 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$tab = $_GET['tab'] ?? 'home';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andrea Volpi</title>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+
+<body>
+
+
+	
+
+    <div class="header">
+        <h1 style="font-size:325%;"><b>Andrea Volpi</b></h1>
+		<h2>Contact:<br></h2>
+		<address>
+		<a href="https://dmif.uniud.it/en" target="_blank">Department of Mathematics, Computer Science and Physics</a><br>
+		<a href="https://www.uniud.it/en/uniud-international?set_language=en" target="_blank">University of Udine</a><br>
+		<i class="fa fa-location-arrow" style="font-size:18px;color:midnightblue"></i> Via delle Scienze, 206,
+		33100 Udine UD, Italy<br>
+		<i class="fa fa-building" style="font-size:15px;color:midnightblue"></i> Office: A2 50<br>
+		<span style='font-size:13px;color:midnightblue' class="glyphicon glyphicon-phone-alt"></span> Phone: +39 0432 558401<br>
+		<i class="material-icons" style="font-size:15px;color:midnightblue">email</i> Institutional email: <a href="mailto:andrea.volpi@uniud.it" target="_blank">andrea.volpi@uniud.it</a><br>
+		<i class="material-icons" style="font-size:15px;color:midnightblue">email</i> Personal email: <a href="mailto:andreavolpi207801@gmail.com" target="_blank">andreavolpi207801@gmail.com</a><br>
+		</address> 
+    </div>
+
+    <div class="tabs">
+        <a href="?tab=home" class="<?= $tab == 'home' ? 'active' : '' ?>">Home</a>
+        <a href="?tab=publications" class="<?= $tab == 'publications' ? 'active' : '' ?>">Publications</a>
+		<a href="?tab=talks" class="<?= $tab == 'talks' ? 'active' : '' ?>">Talks</a>
+        <a href="?tab=teaching" class="<?= $tab == 'teaching' ? 'active' : '' ?>">Teaching</a>
+    </div>
+
+    <div class="content">
+        <?php if ($tab === 'home'): ?>
+            <div class="home-layout">
+                <div class="home-text">
+                    <h2>Welcome!</h2>
+                    <p> I am a PhD student at the University of Udine under the supervision of professor <a href="https://users.dimi.uniud.it/~alberto.marcone/" target="_blank">Alberto Marcone</a>. 
+					I graduated in mathematics at the University of Trento in 2021 with the thesis <q>Model theory of pseudofinite structures</q>. Here is my <a href="CV_Volpi_0425.pdf" target="_blank">CV</a>. 
+					<br> <br> I am interested in computability theory, with a focus on foundational questions from mathematical logic. My research so far focused on the reverse mathematics of combinatorial principles, especially from order theory and graph theory. I am also interested in Ramsey theory, in particular in the study of Ramsey like statements. 
+					<br> <br> For more information about my	research, please refer to my <a href="research_statement_Volpi_0425.pdf" target="_blank">research statement</a>. 			
+					</p>
+                </div>
+                <div class="home-image">
+                    <img src="avolpi.jpg" alt="Cartman" width="250" height=auto>
+                </div>
+				<div class="footer">
+        <p style="font-size:75%;">Created by <a href="parchetto.jpeg" target="_blank">Francisco Pushish</a></p>
+    </div>
+            </div>
+        <?php elseif ($tab === 'publications'): ?>
+            <h2>Publications and work in progress</h2>
+		<p> A list of publications and work in progress in order of submission. </p>
+            <ol>
+                <li> <em> Effectiveness and strong graph indivisibility </em>, joint with Damir Dzhafarov and Reed Solomon, (submitted) <a href="https://arxiv.org/abs/2411.16950" target="_blank"> 	arXiv:2411.16950</a> </li> <br>
+				<li> <em> The barrier Ramsey theorem </em>, joint with Alberto Marcone and Antonio Montalbán, (submitted) <a href="https://arxiv.org/abs/2505.02544" target="_blank">arXiv:2505.02544</a> </li> <br>
+                <li> <em> Reverse mathematics and dimension of posets </em>, joint with Marta Fiori Carones and Alberto Marcone, (work in progress) </li> <br>
+				<li> <em> An analysis of Ramsey theorem for relatively large sets </em>, joint with Java Villano, (work in progress) </li> <br>
+            </ol>
+		<?php elseif ($tab === 'talks'): ?>
+            <h2>Talks</h2>
+            <table>
+				<tr>
+					<td style="width:20%">Sep 2024</td>
+					<td><em>Reverse mathematics and dimension of posets</em></td>
+				</tr>
+				<tr>
+					<td style="width:20%"></td>
+					<td>XXVIII AILA logic meeting, University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:20%">Sep 2024</td>
+					<td><em>Classifying the pigeonhole property</em></td>
+				</tr>
+				<tr>
+					<td style="width:20%"></td>
+					<td>Models, sets and classifications PRIN meeting, University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:20%">Jun 2024</td>
+					<td><em>Largeness notions</em></td>
+				</tr>
+				<tr>
+					<td style="width:20%"></td>
+					<td>Logic colloquium 2024, University of Gothenburg, Sweden</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:20%">Feb 2024</td>
+					<td><em>Reverse mathematics and dimension of posets</em></td>
+				</tr>
+				<tr>
+					<td style="width:20%"></td>
+					<td>Connecticut logic seminar, UConn, Storrs, Connecticut, US</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:20%">Feb 2024</td>
+					<td><em>Largeness notions</em></td>
+				</tr>
+				<tr>
+					<td style="width:20%"></td>
+					<td>Computability seminar, CUNY graduate center, New York, US</td>
+				</tr>
+			</table>
+        <?php elseif ($tab === 'teaching'): ?>
+            <h2>Teaching</h2>
+			<table>
+				<tr>
+					<td style="width:30%">Sep 2024 - May 2025</td>
+					<td><em>Geometry I</em>, B.Sc. in mathematics, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Sep 2024 - Dec 2024</td>
+					<td><em>Linear algebra</em>, B.Sc. in engineering, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Nov 2023 - Dec 2023</td>
+					<td><em>Calculus I</em>, B.Sc. in mathematics, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Sep 2023 - Oct 2023</td>
+					<td><em>Calculus I</em>, B.Sc. in informatics, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Jan 2023 - Sep 2023</td>
+					<td><em>Calculus I</em>, B.Sc. in informatics and IBML, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Udine, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Sep 2020 to Dec 2020</td>
+					<td><em>Geometry and linear algebra</em>, B.Sc. in engineering, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Trento, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Jan 2020 - May 2020</td>
+					<td><em>Geometry and linear algebra</em>, B.Sc. in engineering, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Trento, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Sep 2019 - Dec 2019</td>
+					<td><em>Geometry I</em>, B.Sc. in mathematics, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Trento, Italy</td>
+				</tr>
+				<tr style="height:10px"></tr>
+				<tr>
+					<td style="width:30%">Jan 2019 - May 2019</td>
+					<td><em>Geometry and linear algebra</em>, B.Sc. in engineering, Teaching assistant</td>
+				</tr>
+				<tr>
+					<td style="width:30%"></td>
+					<td>University of Trento, Italy</td>
+				</tr>
+			</table>
+        <?php endif; ?>
+    </div>
+
+</body>
+</html>

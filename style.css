@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/iwona');
+
+address {
+  font-family: Iwona Light;
+  font-size: 1.125em;
+  display: block;
+  font-style: italic;
+}
+
+
+.header {
+	font-family: Iwona Light;
+    text-align: left;
+    margin-bottom: 25px;
+	margin-left: 40px;
+	margin-top: -30px;
+}
+
+.footer {
+	font-family: Iwona Light;
+    text-align: right;
+    margin-top: 25px;
+	margin-right: 40px;
+	margin-bottom: -30px;
+}
+
+.tabs {
+	font-family: Iwona Light;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 15px;
+    font-size: 1.3em
+}
+
+.tabs a {
+	font-family: Iwona Light;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #FFFAFA;
+    color: #000;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.tabs a.active {
+	font-family: Iwona Light;
+    background-color: #191970;
+    color: white;
+}
+
+.tabs a:hover {
+	font-family: Iwona Light;
+	text-decoration: none;
+    background-color: #191970;
+    color: white;
+}
+
+.content {
+	font-family: Iwona Light;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #FFFAFA;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+body {
+    font-family: Iwona Light;
+    text-align: left;
+    padding: 25px;
+	margin-right: 40px;
+	margin-top: -30px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+h1 {
+	font-family: Iwona Light;
+    font-size: 3.5em;
+}
+
+h2 {
+	font-family: Iwona Light;
+    font-size: 2em;
+}
+
+p {
+	font-family: Iwona Light;
+    font-size: 1.2em;
+}
+
+
+ol {
+	font-family: Iwona Light;
+    font-size: 1.2em;
+}
+
+
+/* Two-column layout for homepage */
+.home-layout {
+	font-family: Iwona Light;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-text {
+	font-family: Iwona Light;
+    flex: 1 1 50%;
+}
+
+.home-image {
+	font-family: Iwona Light;
+    flex: 1 1 20%;
+    text-align: center;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+table, th, td {
+	border: none;
+	font-family: Iwona Light;
+    font-size: 1.05em;
+}
+
+
