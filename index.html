@@ -4,49 +4,45 @@
     <meta charset="UTF-8">
     <title>Andrea Volpi</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <style>
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-    </style>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 
-    <div class="header">
-        <h1 style="font-size:325%;"><b>Andrea Volpi</b></h1>
-        <h2>Contact:<br></h2>
-        <address>
+<div class="layout-container">
+    <div class="left-panel"">
+        <div class="header">
+            <h1><b>Andrea Volpi</b></h1>
+            <h2>Contact:<br></h2>
+            <address>
             <a href="https://dmif.uniud.it/en" target="_blank">Department of Mathematics, Computer Science and Physics</a><br>
             <a href="https://www.uniud.it/en/uniud-international?set_language=en" target="_blank">University of Udine</a><br>
+			<a href="https://www.logicgroup.altervista.org/udine/index.php?lng=eng" target="_blank">Mathematical Logic group of Udine</a><br>			
             <i class="fa fa-location-arrow" style="font-size:18px;color:midnightblue"></i> Via delle Scienze, 206, 33100 Udine UD, Italy<br>
             <i class="fa fa-building" style="font-size:15px;color:midnightblue"></i> Office: A2 50<br>
             <span style='font-size:13px;color:midnightblue' class="glyphicon glyphicon-phone-alt"></span> Phone: +39 0432 558401<br>
             <i class="material-icons" style="font-size:15px;color:midnightblue">email</i> Institutional email: <a href="mailto:andrea.volpi@uniud.it" target="_blank">andrea.volpi@uniud.it</a><br>
             <i class="material-icons" style="font-size:15px;color:midnightblue">email</i> Personal email: <a href="mailto:andreavolpi207801@gmail.com" target="_blank">andreavolpi207801@gmail.com</a><br>
         </address>
+        </div>
     </div>
 
-    <div class="tabs">
-        <a href="#" class="tablink active" onclick="showTab(event, 'home')">Home</a>
-        <a href="#" class="tablink" onclick="showTab(event, 'publications')">Publications</a>
-        <a href="#" class="tablink" onclick="showTab(event, 'talks')">Talks</a>
-        <a href="#" class="tablink" onclick="showTab(event, 'teaching')">Teaching</a>
-    </div>
+    <div class="right-panel">
+        <div class="tabs">
+            <a href="#" class="tablink active" onclick="showTab(event, 'home')">Home</a>
+            <a href="#" class="tablink" onclick="showTab(event, 'publications')">Publications</a>
+            <a href="#" class="tablink" onclick="showTab(event, 'talks')">Talks</a>
+            <a href="#" class="tablink" onclick="showTab(event, 'teaching')">Teaching</a>
+        </div>
 
-    <div class="content">
-
-        <div id="home" class="tab-content active">
-            <div class="home-layout">
+        <div class="content">
+            <div id="home" class="tab-content active">
+                <div class="home-layout">
                 <div class="home-text">
-                    <h2>Welcome!</h2>
+                    <h2 style="font-family:Iwona Light;">Welcome!</h2>
                     <p>I am a PhD student at the University of Udine under the supervision of professor 
                     <a href="https://users.dimi.uniud.it/~alberto.marcone/" target="_blank">Alberto Marcone</a>. 
                     I graduated in mathematics at the University of Trento in 2021 with the thesis 
@@ -61,17 +57,17 @@
                     </p>
                 </div>
                 <div class="home-image">
-                    <img src="avolpi.jpg" alt="Photo of Andrea Volpi" width="250" height="auto">
+                    <img src="photo4.jpg" alt="Photo of Andrea Volpi" width="250" height="auto">
                 </div>
             </div>
             <div class="footer">
-                <p style="font-size:75%;">Created by <a href="parchetto.jpeg" target="_blank">Francisco Pushish</a></p>
+                <p style="font-size:75%;color:gray">Created by <a href="parchetto.jpeg" target="_blank">Francisco Pushish</a></p>
             </div>
         </div>
-
-        <div id="publications" class="tab-content">
-            <h2>Publications and work in progress</h2>
-            <ol>
+		
+            <div id="publications" class="tab-content">
+                <h2 style="font-family:Iwona Light;">Publications and work in progress</h2>
+            <ol style="font-size:1.2em;">
                 <li><em>Effectiveness and strong graph indivisibility</em>, with Damir Dzhafarov and Reed Solomon (submitted) 
                     <a href="https://arxiv.org/abs/2411.16950" target="_blank">arXiv:2411.16950</a></li><br>
                 <li><em>The barrier Ramsey theorem</em>, with Alberto Marcone and Antonio Montalbán (submitted) 
@@ -79,10 +75,10 @@
                 <li><em>Reverse mathematics and dimension of posets</em>, with Marta Fiori Carones and Alberto Marcone (in progress)</li><br>
                 <li><em>An analysis of Ramsey theorem for relatively large sets</em>, with Java Villano (in progress)</li><br>
             </ol>
-        </div>
-
-        <div id="talks" class="tab-content">
-            <h2>Talks</h2>
+            </div>
+			
+            <div id="talks" class="tab-content">
+                <h2 style="font-family:Iwona Light;">Talks</h2>
             <p><table>
 				<tr>
 					<td style="width:20%">Sep 2024</td>
@@ -129,10 +125,10 @@
 					<td>Computability seminar, CUNY graduate center, New York, US</td>
 				</tr>
 			</table></p>
-        </div>
-
-        <div id="teaching" class="tab-content">
-            <h2>Teaching</h2>
+            </div>
+			
+            <div id="teaching" class="tab-content">
+                <h2 style="font-family:Iwona Light;">Teaching</h2>
             <p><table>
 				<tr>
 					<td style="width:30%">Sep 2024 - May 2025</td>
@@ -215,22 +211,23 @@
 					<td>University of Trento, Italy</td>
 				</tr>
 			</table></p>
+            </div>
         </div>
-
     </div>
+</div>
 
-    <script>
-        function showTab(evt, tabName) {
-            const tabs = document.querySelectorAll('.tab-content');
-            const links = document.querySelectorAll('.tablink');
+<script>
+function showTab(evt, tabName) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const links = document.querySelectorAll('.tablink');
 
-            tabs.forEach(t => t.classList.remove('active'));
-            links.forEach(l => l.classList.remove('active'));
+    tabs.forEach(t => t.classList.remove('active'));
+    links.forEach(l => l.classList.remove('active'));
 
-            document.getElementById(tabName).classList.add('active');
-            evt.currentTarget.classList.add('active');
-        }
-    </script>
+    document.getElementById(tabName).classList.add('active');
+    evt.currentTarget.classList.add('active');
+}
+</script>
 
 </body>
 </html>
