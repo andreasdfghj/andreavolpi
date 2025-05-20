@@ -169,3 +169,69 @@ p, ol, table, th, td {
         max-width: 100%;
     }
 }
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .tabs {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    .tabs a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header h2 {
+        font-size: 1.25em;
+    }
+
+    address {
+        font-size: 1em;
+    }
+
+    .panel-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-image img {
+        margin-top: 20px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .home-text {
+        font-size: 1em;
+    }
+
+    table, td, th {
+        font-size: 0.95em;
+    }
+}
+
+/* Make all images responsive globally */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure tables don’t overflow */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
