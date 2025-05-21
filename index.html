@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <title>Andrea Volpi</title>
     <link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -9,15 +9,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<body style="background-color: black;">
 
-<div class="layout-container">
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+	
+</body>
+<!-- partial -->
+  
+  
+  
+  
+  <div class="layout-container">
     <div class="left-panel">
         <div class="header">
-            <h1><b>Andrea Volpi</b></h1>
-            <h2>Contact:<br></h2>
-            <address>
+            <h1 style="color:white"><b>Andrea Volpi</b></h1>
+            <h2 style="color:white">Contact:<br></h2>
+            <address style="color:white">
             <a href="https://dmif.uniud.it/en" target="_blank">Department of Mathematics, Computer Science and Physics</a><br>
             <a href="https://www.uniud.it/en/uniud-international?set_language=en" target="_blank">University of Udine</a><br>
 			<a href="https://www.logicgroup.altervista.org/udine/index.php?lng=eng" target="_blank">Mathematical Logic group of Udine</a><br>			
@@ -45,18 +61,18 @@
             <div id="home" class="tab-content active">
                 <div class="home-layout">
                 <div class="home-text">
-                    <h2 style="font-family:Iwona Light;">Welcome!</h2>
-                    <p>I am a PhD student at the University of Udine under the supervision of professor 
+                    <h2 style="font-family:Iwona Light; color:white">Welcome!</h2>
+                    <p style="color:white">I am a PhD student at the University of Udine under the supervision of professor 
                     <a href="https://users.dimi.uniud.it/~alberto.marcone/" target="_blank">Alberto Marcone</a>. 
                     I graduated in mathematics at the University of Trento in 2021 with the thesis 
-                    <q>Model theory of pseudofinite structures</q>. Here is my <a href="CV_Volpi_0525.pdf" target="_blank">CV</a>.
+                    <q>Model theory of pseudofinite structures</q>. Here is my <a href="CV_Volpi_0425.pdf" target="_blank">CV</a>.
 
                     <br><br>I am interested in computability theory, with a focus on foundational questions from mathematical logic. 
                     My research so far focused on the reverse mathematics of combinatorial principles, especially from order theory 
                     and graph theory. I am also interested in Ramsey theory, in particular in the study of Ramsey like statements.
 
                     <br><br>For more information about my research, please refer to my 
-                    <a href="research_statement_Volpi_0525.pdf" target="_blank">research statement</a>.
+                    <a href="research_statement_Volpi_0425.pdf" target="_blank">research statement</a>.
                     </p>
                 </div>
                 <div class="home-image">
@@ -69,8 +85,8 @@
         </div>
 		
             <div id="publications" class="tab-content">
-                <h2 style="font-family:Iwona Light;">Publications and work in progress</h2>
-            <ol style="font-size:1.2em;">
+                <h2 style="font-family:Iwona Light; color:white">Publications and work in progress</h2>
+            <ol style="font-size:1.2em; color:white">
                 <li><em>Effectiveness and strong graph indivisibility</em>, with Damir Dzhafarov and Reed Solomon (submitted) 
                     <a href="https://arxiv.org/abs/2411.16950" target="_blank">arXiv:2411.16950</a></li><br>
                 <li><em>The barrier Ramsey theorem</em>, with Alberto Marcone and Antonio Montalbán (submitted) 
@@ -81,8 +97,8 @@
             </div>
 			
             <div id="talks" class="tab-content">
-                <h2 style="font-family:Iwona Light;">Talks</h2>
-            <p><table>
+                <h2 style="font-family:Iwona Light; color:white">Talks</h2>
+            <p style="color:white"><table style="color:white">
 				<tr>
 					<td style="width:20%">Sep 2024</td>
 					<td><em>Reverse mathematics and dimension of posets</em></td>
@@ -131,8 +147,8 @@
             </div>
 			
             <div id="teaching" class="tab-content">
-                <h2 style="font-family:Iwona Light;">Teaching</h2>
-            <p><table>
+                <h2 style="font-family:Iwona Light; color:white">Teaching</h2>
+            <p style="color:white"><table style="color:white">
 				<tr>
 					<td style="width:30%">Sep 2024 - May 2025</td>
 					<td><em>Geometry I</em>, B.Sc. in mathematics, Teaching assistant</td>
@@ -231,6 +247,9 @@ function showTab(evt, tabName) {
     evt.currentTarget.classList.add('active');
 }
 </script>
-
+  
+  
+  
+  
 </body>
 </html>
