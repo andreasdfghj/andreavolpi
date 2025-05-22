@@ -1,4 +1,3 @@
-
 @import url('https://fonts.cdnfonts.com/css/iwona');
 
 body {
@@ -121,6 +120,8 @@ address {
 	border-radius: 50%;
     flex: 0 0 300px;
     text-align: left;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .home-image img {
@@ -376,3 +377,59 @@ table {
                 transform: translateY(-2000px);
             }
         }
+
+
+@media (max-width: 600px) {
+    /* Hide panel image */
+    .panel-image {
+        display: none;
+    }
+
+    /* Hide home image */
+    .home-image {
+        display: none;
+    }
+
+    /* Keep tab buttons horizontal but shrink spacing/font */
+    .tabs {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: space-between;
+        font-size: 0.9em;
+        gap: 5px;
+        margin-left: 0;
+    }
+
+    .tabs a {
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    /* Stack header and content vertically */
+    .layout-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+
+    /* Home layout remains vertical */
+    .home-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .home-text {
+        text-align: left;
+        align-self: flex-start;
+    }
+}
