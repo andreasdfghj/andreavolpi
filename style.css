@@ -382,8 +382,20 @@ table {
 @media (max-width: 600px) {
     /* Hide panel image */
     .panel-image {
-        display: none;
-    }
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.panel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
     /* Hide home image */
     .home-image {
