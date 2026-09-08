@@ -386,8 +386,8 @@ table {
     position: absolute;
     top: 0;
     right: 0;
-    width: 120px;
-    height: 120px;
+    width:200px;
+    height: 200px;
 }
 
 .home-image img {
