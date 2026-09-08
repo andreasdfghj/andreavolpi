@@ -381,7 +381,7 @@ table {
 
 @media (max-width: 600px) {
     /* Hide panel image */
-    .panel-image {
+    .home-image {
     display: block;
     position: absolute;
     top: 0;
@@ -390,7 +390,7 @@ table {
     height: 120px;
 }
 
-.panel-image img {
+.home-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -398,7 +398,7 @@ table {
 }
 
     /* Hide home image */
-    .home-image {
+    .panel-image {
         display: none;
     }
 
