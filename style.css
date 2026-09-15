@@ -577,3 +577,35 @@ table {
         width: 100%;
     }
 }
+
+/* Alignment for Talks and Teaching */
+
+#talks table,
+#teaching table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#talks table td:first-child {
+    width: 20%;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+#teaching table td:first-child {
+    width: 30%;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+#talks table td:last-child,
+#teaching table td:last-child {
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+#talks table tr,
+#teaching table tr {
+    vertical-align: top;
+}
